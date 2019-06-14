@@ -1,34 +1,47 @@
 .hyper_main {
-  border: 0 transparent solid;
+  --borderWidth: 3px;
+  bottom: var(--borderWidth);
+  top: var(--borderWidth);
+  left: var(--borderWidth);
+  right: var(--borderWidth);
+  background: rgb(0, 0, 0, 1);
+  position: absolute;
+  border: 0px transparent solid;
+  border-radius: calc(1.5 * var(--borderWidth));
 }
 
-.hyper_main::after {
-  content: "";
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  border-style: solid;
-  border-radius: 5px;
-  border: 0 #f82a71 solid;
-  border-image-slice: 1;
-  border-width: 1px;
-  animation: hoge 4s infinite ease-in;
+.hyper_main:after {
+  content: '';
+  position: absolute;
+  top: calc(-1 * var(--borderWidth));
+  left: calc(-1 * var(--borderWidth));
+  height: calc(100% + var(--borderWidth) * 2);
+  width: calc(100% + var(--borderWidth) * 2);
+  background: linear-gradient(
+    60deg,
+    rgba(247, 149, 51, 0.8),
+    rgba(243, 112, 85, 0.8),
+    rgba(239, 78, 123, 0.8),
+    rgba(161, 102, 171, 0.8),
+    rgba(80, 115, 184, 0.8),
+    rgba(16, 152, 173, 0.8),
+    rgba(7, 179, 155, 0.8),
+    rgba(111, 186, 130, 0.8)
+  );
+  border-radius: calc(2 * var(--borderWidth));
+  z-index: -1;
+  animation: animatedgradient 3s ease alternate infinite;
+  background-size: 500% 500%;
 }
 
-@keyframes hoge {
+@keyframes animatedgradient {
   0% {
-    border-color: #f82a71;
-    opacity: 1;
+    background-position: 0% 50%;
   }
   50% {
-    border-color: #ae80fe;
-    opacity: 0;
+    background-position: 100% 50%;
   }
   100% {
-    border-color: #f82a71;
-    opacity: 1;
+    background-position: 0% 50%;
   }
 }
-

@@ -1,12 +1,12 @@
 {
   "name": "hyper-monokai-glow",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Monokai theme to the Hyper terminal",
   "main": "index.js",
   "scripts": {
     "build": "rollup -c",
     "develop": "rollup -c -w",
-    "format": "prettier --write './**/*.{js,ts,json,md}'",
+    "format": "prettier --write './**/*.{js,ts,json,md,css}'",
     "lint": "eslint --fix '**/*.js'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
