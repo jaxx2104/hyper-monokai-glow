@@ -1,0 +1,34 @@
+.hyper_main {
+  border: 0 transparent solid;
+}
+
+.hyper_main::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  border-style: solid;
+  border-radius: 5px;
+  border: 0 #f82a71 solid;
+  border-image-slice: 1;
+  border-width: 1px;
+  animation: hoge 4s infinite ease-in;
+}
+
+@keyframes hoge {
+  0% {
+    border-color: #f82a71;
+    opacity: 1;
+  }
+  50% {
+    border-color: #ae80fe;
+    opacity: 0;
+  }
+  100% {
+    border-color: #f82a71;
+    opacity: 1;
+  }
+}
+
