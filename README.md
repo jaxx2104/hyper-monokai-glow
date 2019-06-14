@@ -1,6 +1,6 @@
 # hyper-monokai-glow
 
-[![NPM Version](http://img.shields.io/npm/v/hyper-monokai-glow.svg?style=flat)](https://www.npmjs.org/package/warsman)
+[![NPM Version](http://img.shields.io/npm/v/hyper-monokai-glow.svg?style=flat)](https://www.npmjs.org/package/hyper-monokai-glow)
 
 Monokai theme to the Hyper terminal
 
