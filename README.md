@@ -4,7 +4,7 @@
 
 Monokai theme to the Hyper terminal
 
-![warsman](./sample.gif)
+![warsman](https://github.com/jaxx2104/hyper-monokai-glow/raw/master/sample.gif)
 
 ## Install
 

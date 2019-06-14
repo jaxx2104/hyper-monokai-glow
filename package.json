@@ -14,6 +14,7 @@
     "hyper",
     "hyper-theme"
   ],
+  "repository": "jaxx2104/hyper-monokai-glow",
   "author": "jaxx2104",
   "license": "MIT",
   "devDependencies": {
