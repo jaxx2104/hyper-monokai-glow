@@ -8,6 +8,7 @@
     "develop": "rollup -c -w",
     "format": "prettier --write './**/*.{js,ts,json,md,css}'",
     "lint": "eslint --fix '**/*.js'",
+    "release": "np",
     "test": "npm run build"
   },
   "keywords": [
@@ -23,6 +24,7 @@
     "eslint": "^5.16.0",
     "eslint-config-prettier": "^4.3.0",
     "eslint-plugin-prettier": "^3.1.0",
+    "np": "^5.0.3",
     "prettier": "^1.18.2",
     "rollup": "^1.0.0",
     "rollup-plugin-commonjs": "^9.2.0",
