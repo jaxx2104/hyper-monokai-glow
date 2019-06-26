@@ -8,7 +8,7 @@
     "develop": "rollup -c -w",
     "format": "prettier --write './**/*.{js,ts,json,md,css}'",
     "lint": "eslint --fix '**/*.js'",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm run build"
   },
   "keywords": [
     "hyper",
