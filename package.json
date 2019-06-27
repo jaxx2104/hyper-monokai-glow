@@ -1,6 +1,6 @@
 {
   "name": "hyper-monokai-glow",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Monokai theme to the Hyper terminal",
   "main": "index.js",
   "scripts": {
