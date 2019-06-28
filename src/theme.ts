@@ -19,5 +19,3 @@ export const colors = {
   lightCyan: '#66d8ee',
   lightWhite: '#f7f7f1'
 }
-export const fonts =
-  'Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace'

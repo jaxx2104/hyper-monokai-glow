@@ -1,8 +1,11 @@
-import { backgrourd, foreground, cursor, colors, fonts } from './theme.js'
+import { backgrourd, foreground, cursor, colors } from './theme.js'
 import fs from 'fs'
 import path from 'path'
 
-const styles = fs.readFileSync(path.join(__dirname, 'assets/styles.css'), 'utf8')
+const styles = fs.readFileSync(
+  path.join(__dirname, 'assets/styles.css'),
+  'utf8'
+)
 
 //exports.onWindow = browserWindow => browserWindow.setVibrancy('dark')
 exports.decorateConfig = config => {
@@ -10,7 +13,6 @@ exports.decorateConfig = config => {
     backgroundColor: backgrourd,
     foregroundColor: foreground,
     cursorColor: cursor,
-    fontFamily: fonts,
     colors,
     css: styles
   }
